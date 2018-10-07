@@ -745,9 +745,9 @@
 \ecvRuleWidth{0pt}
 
 % colors
-\definecolor{ecvrulecolor}{HTML}{398dc9}
-\definecolor{ecvsectioncolor}{HTML}{0e4194} % 0e4194
-\definecolor{ecvhighlightcolor}{HTML}{1593cb}
+\definecolor{ecvrulecolor}{HTML}{c6c6c6} %398dc9
+\definecolor{ecvsectioncolor}{HTML}{666666} % 0e4194
+\definecolor{ecvhighlightcolor}{HTML}{666666} % 1593cb
 \definecolor{ecvtablebordercolor}{HTML}{c6c6c6}
-\definecolor{ecvlanglinkcolor}{HTML}{000080}
-\definecolor{ecvtextcolor}{HTML}{3e3a38}
+\definecolor{ecvlanglinkcolor}{HTML}{333333} % 000080
+\definecolor{ecvtextcolor}{HTML}{111111} % 3e3a38
