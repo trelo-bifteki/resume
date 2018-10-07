@@ -21,13 +21,13 @@ icons: $(ICONS_SVG) $(ICONS_PDF)
 %_europass_icon.pdf : %_europass_icon.ps
 	ps2pdf $<
 
-documentation: class europasscv.pdf europasscv_en.pdf
+documentation: class resume-de-Lampros_Papadimitriou.pdf resume-en-Lampros_Papadimitriou.pdf
 
-europasscv.pdf: europasscv.tex
+resume-de-Lampros_Papadimitriou.pdf: resume-de-Lampros_Papadimitriou.tex
 	pdflatex $<
 	pdflatex $<
 
-europasscv_en.pdf: europasscv_en.tex
+resume-en-Lampros_Papadimitriou.pdf: resume-en-Lampros_Papadimitriou.tex
 	pdflatex $<
 	pdflatex $<
 
