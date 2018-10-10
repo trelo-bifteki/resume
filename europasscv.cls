@@ -10,6 +10,17 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{europasscv}[2015/03/10 (beta) Europass curriculum vitae class, 2013 version]
 
+\usepackage{tikz}
+
+% roundpic directive
+
+\newcommand{\roundpic}[4][]{
+	\tikz\node [circle, minimum width = #2,
+	path picture = {
+		\node [#1] at (path picture bounding box.center) {
+			\includegraphics[width=#3]{#4}};
+	}] {};}
+
 % CV models and instructions:
 %   http://europass.cedefop.eu.int/htm/index.htm
 % Recommendations:
@@ -405,7 +416,7 @@
 \def\ecv@picture[#1]#2{%
 \def\ecvarg{#2}
 \ifx\@empty\ecvarg\renewcommand*{\ecvdrawpicture}{}\else
-\renewcommand*{\ecvdrawpicture}{\includegraphics[#1]{#2}}
+\renewcommand*{\ecvdrawpicture}{\roundpic[#1]{4.1cm}{4.1cm}{#2}}
 \@ecvpicturetrue
 \fi}
 % The following must be used inside \ecvbeforepicture
