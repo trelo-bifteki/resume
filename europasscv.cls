@@ -753,6 +753,10 @@
   \@ecvitemskipfalse
 }
 
+\newcommand{\ecvsubtitle}[1]{
+	\ecvitem{}{\textbf{#1}}
+}
+
 \ecvRuleWidth{0pt}
 
 % colors
