@@ -28,9 +28,11 @@ Install the following packages first:
 ### Build
 
 Run the following command:
-´´´
+
+```
+make clean
 make
-´´´
+```
 
 ## Examples
 
