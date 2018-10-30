@@ -1,11 +1,11 @@
-ICONS_SVG=$(wildcard *_europass_icon.svg)
+ICONS_SVG=$(wildcard assets/*_icon.svg)
 ICONS_PDF=$(ICONS_SVG:.svg=.pdf)
 
 all: class documentation
 
 pictures: icons europasslogo2013.pdf
 
-europasslogo2013.pdf: europasslogo2013.svg
+europasslogo2013.pdf: assets/europasslogo2013.svg
 	inkscape $< --export-area-drawing --export-pdf $@
 
 # convert from pdf to ps then back to pdf to avoid the pdftex warning "PDF
@@ -19,7 +19,7 @@ icons: $(ICONS_SVG) $(ICONS_PDF)
 	pdf2ps $< $@
 
 %_europass_icon.pdf : %_europass_icon.ps
-	ps2pdf $<
+	ps2pdf $< $@
 
 documentation: class resume-de-Lampros_Papadimitriou.pdf resume-en-Lampros_Papadimitriou.pdf
 
@@ -53,5 +53,8 @@ package: class documentation
 distclean:
 	rm -f *~ *.synctex.gz *.aux *.log *.out *.backup *.toc *.temp
 
-clean: distclean
+cleanicons:
+	rm -r assets/*.pdf
+
+clean: distclean cleanicons
 	rm -f *.pdf

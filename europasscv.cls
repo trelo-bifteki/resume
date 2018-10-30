@@ -237,11 +237,11 @@
 \DeclareOption{macukr}{\AtEndOfClass{\inputencoding{macukr}}}
 
 % Set font
-\DeclareOption{helvetica}{%                       
+\DeclareOption{helvetica}{%
   \renewcommand{\rmdefault}{phv}
   \renewcommand{\sfdefault}{phv}
 }
-\DeclareOption{arial}{%                       
+\DeclareOption{arial}{%
   \renewcommand{\rmdefault}{ma1} % (this font is NOT installed by default!)
   \renewcommand{\sfdefault}{ma1}
 }
@@ -288,7 +288,7 @@
 % Pass all other options (a4paper, 10pt, draft, openbib, etc...) to article
 \DeclareOption*{%
   \PassOptionsToClass{\CurrentOption}{article}%
-} 
+}
 
 \ExecuteOptions{english,hrule,totpages} % Default options
 
@@ -352,7 +352,7 @@
 \setlength{\headheight}{13.5pt}
 % \setlength{\footskip}{8.4pt}
 \fancyhead{}
- 
+
 \fancyhead[R]{
 \raggedleft \fontfamily{phv}\fontseries{m}\selectfont \textcolor{ecvhighlightcolor}{\ecv@name}
 }
@@ -360,7 +360,7 @@
 \fancyhead[L]{
 \noindent
 \begin{minipage}{0.5\textwidth}
-\noindent\makebox[\ecv@leftcolwidth][l]{\noindent\raisebox{-0.68\height}[0pt][0pt]{\if@ecvlogo\includegraphics[width=0.6\ecv@logowidth]{europasslogo2013.pdf}\fi}}
+\noindent\makebox[\ecv@leftcolwidth][l]{\noindent\raisebox{-0.68\height}[0pt][0pt]{\if@ecvlogo\includegraphics[width=0.6\ecv@logowidth]{assets/europasslogo2013.pdf}\fi}}
 \hspace*{\ecv@leftcolwidth}\hspace*{\ecv@colsep}\noindent
 \raisebox{\dp\strutbox}{\ecvcoloredtitle}
 \end{minipage}
@@ -372,7 +372,7 @@
 \fancyhead[L]{
 \noindent
 \begin{minipage}{0.5\textwidth}
-\noindent\makebox[\ecv@leftcolwidth][l]{\noindent\raisebox{-0.52\height}[0pt][0pt]{\if@ecvlogo\includegraphics[width=\ecv@logowidth]{europasslogo2013.pdf}\fi}}
+\noindent\makebox[\ecv@leftcolwidth][l]{\noindent\raisebox{-0.52\height}[0pt][0pt]{\if@ecvlogo\includegraphics[width=\ecv@logowidth]{assets/europasslogo2013.pdf}\fi}}
 \hspace*{\ecv@leftcolwidth}\hspace*{\ecv@colsep}\noindent
 \raisebox{\dp\strutbox}{\ecvcoloredtitle}
 \end{minipage}
@@ -447,26 +447,26 @@
 \raggedright
 {\ecvLargenormalstyle{\ecv@name}} \newline
 \ifx\@empty\ecv@address\else
-    \raisebox{-2\lineskip}{\includegraphics[width=0.4cm]{address_europass_icon.pdf}}\hspace{0.2mm} {\fontseries{m}\selectfont \ecv@address} \newline
+    \raisebox{-2\lineskip}{\includegraphics[width=0.4cm]{assets/address_europass_icon.pdf}}\hspace{0.2mm} {\fontseries{m}\selectfont \ecv@address} \newline
 \fi
 \ifx\@empty\ecv@mobile
   \ifx\@empty\ecv@telephone\else
-      \raisebox{-2\lineskip}{\includegraphics[width=0.4cm]{telephone_europass_icon.pdf}}\hspace{0.2mm} {\fontseries{m}\selectfont \ecv@telephone} \newline
+      \raisebox{-2\lineskip}{\includegraphics[width=0.4cm]{assets/telephone_europass_icon.pdf}}\hspace{0.2mm} {\fontseries{m}\selectfont \ecv@telephone} \newline
   \fi
 \else
-  \raisebox{-2\lineskip}{\includegraphics[width=0.4cm]{mobile_europass_icon.pdf}}\hspace{0.2mm} {\fontseries{m}\selectfont \ecv@mobile} \quad \ifx\@empty\ecv@telephone\else  \raisebox{-2\lineskip}{\includegraphics[width=0.4cm]{telephone_europass_icon.pdf}}\hspace{0.2mm} {\fontseries{m}\selectfont \ecv@telephone\ \newline}\fi
+  \raisebox{-2\lineskip}{\includegraphics[width=0.4cm]{assets/mobile_europass_icon.pdf}}\hspace{0.2mm} {\fontseries{m}\selectfont \ecv@mobile} \quad \ifx\@empty\ecv@telephone\else  \raisebox{-2\lineskip}{\includegraphics[width=0.4cm]{assets/telephone_europass_icon.pdf}}\hspace{0.2mm} {\fontseries{m}\selectfont \ecv@telephone\ \newline}\fi
 \fi
 \ifx\@empty\ecv@fax\else
-    \ecv@faxkey \ecv@fax 
+    \ecv@faxkey \ecv@fax
 \fi
 \ifx\@empty\ecv@email\else
-    \raisebox{-2\lineskip}{\includegraphics[width=0.4cm]{mail_europass_icon.pdf}}\hspace{0.2mm} {\fontseries{m}\selectfont \setul{.5pt}{.4pt}\href{mailto:\ecv@email}{\ul{\mbox{\ecv@email}}}} \newline
+    \raisebox{-2\lineskip}{\includegraphics[width=0.4cm]{assets/mail_europass_icon.pdf}}\hspace{0.2mm} {\fontseries{m}\selectfont \setul{.5pt}{.4pt}\href{mailto:\ecv@email}{\ul{\mbox{\ecv@email}}}} \newline
 \fi
 \ifx\@empty\ecv@homepage\else
-    \raisebox{-2\lineskip}{\includegraphics[width=0.4cm]{website_europass_icon.pdf}}\hspace{0.2mm} {\fontseries{m}\selectfont \setul{.5pt}{.4pt}\href{\ecv@homepage}{\ul{\mbox{\ecv@homepage}}}} \newline
+    \raisebox{-2\lineskip}{\includegraphics[width=0.4cm]{assets/website_europass_icon.pdf}}\hspace{0.2mm} {\fontseries{m}\selectfont \setul{.5pt}{.4pt}\href{\ecv@homepage}{\ul{\mbox{\ecv@homepage}}}} \newline
 \fi
 \ifx\@empty\ecv@im\else
-    \raisebox{-2\lineskip}{\includegraphics[width=0.4cm]{im_europass_icon.pdf}} \hspace{0.2mm}{\fontseries{m}\selectfont \ecv@im} \newline
+    \raisebox{-2\lineskip}{\includegraphics[width=0.4cm]{assets/im_europass_icon.pdf}} \hspace{0.2mm}{\fontseries{m}\selectfont \ecv@im} \newline
 \fi
   \ifx\@empty\ecv@gender\else
       \if@ecvpineedspipe\else \hspace*{-0.5ex}\fi
@@ -490,7 +490,7 @@
       \if@ecvpineedspipe\else \hspace*{-0.5ex}\fi
       \fontseries{m}\selectfont \ecvhighlight{~\if@ecvpineedspipe | \fi \ecv@nationalitykey}~\ecv@nationality \@ecvpineedspipetrue
   \fi
-& 
+&
 \Large \vspace{-\baselineskip}
 \raisebox{-\height}{\ecvdrawpicture}
 \end{tabular}
@@ -533,8 +533,8 @@
   }
   \@ecvfirstlangrowtrue
 }
-  
-  
+
+
 \newcommand*\ecvlangrow[8][-\dp\strutbox]{
   \vspace*{-\dp\strutbox}
   \setlength{\arrayrulewidth}{#8}
@@ -624,7 +624,7 @@
 
 % Text bullet
 \newcommand{\ecvbullet}{\raisebox{.35ex}[0cm][0cm]{\tiny\textbullet}}
-                                          
+
 \newenvironment{europasscv}{%
   \ecvLeftColumnWidth{\ecv@leftcolwidth}
   \ecvColSep{\ecv@colsep}
@@ -714,7 +714,7 @@
   \@ecvitemskiptrue
   \@ecvlastitemwassectionfalse
   \@ecvitemcommandtrue
-} 
+}
 
 \newlength{\ecv@sectionrulelength}
 
@@ -761,7 +761,7 @@
 
 % colors
 \definecolor{ecvrulecolor}{HTML}{398dc9} %
-\definecolor{ecvsectioncolor}{HTML}{0e4194} % 
+\definecolor{ecvsectioncolor}{HTML}{0e4194} %
 \definecolor{ecvhighlightcolor}{HTML}{1593cb} % 1593cb
 \definecolor{ecvtablebordercolor}{HTML}{c6c6c6}
 \definecolor{ecvlanglinkcolor}{HTML}{000080} % 000080
