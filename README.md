@@ -2,10 +2,14 @@
 
 # About
 
-This is my personal CV based on the following:
+This is my personal CV templated based on the Europass templatei 2013. It is
+is useful for all people who prefer the europass template, but prefer to keep
+it clean without additional logos / text
 
 - Inspired by Europass template 2013
 - Different versions for German / English
+- Clean (no logos, EU footers)
+
 
 ## Quick start
 
