@@ -34,21 +34,21 @@ resume-en-Lampros_Papadimitriou.pdf: resume-en-Lampros_Papadimitriou.tex
 class: pictures
 
 package: class documentation
-	mkdir -p europasscv/example
-	cp *.svg europasscv
-	cp *_europass_icon.pdf europasscv
-	cp europasslogo2013.pdf europasscv
-	cp europasscv.cls europasscv
-	cp europasscv*.def europasscv
-	cp europasscv.tex europasscv
-	cp europasscv.pdf europasscv
-	cp europasscv_en.tex europasscv/example
-	cp europasscv_en.pdf europasscv/example
-	cp README europasscv
-	cp Makefile europasscv/Makefile.europasscv
-	tar -cvf europasscv.tar europasscv
-	gzip -f europasscv.tar
-	rm -fr europasscv
+	mkdir -p mypasscv/example
+	cp *.svg mypasscv
+	cp *_europass_icon.pdf mypasscv
+	cp europasslogo2013.pdf mypasscv
+	cp mypasscv.cls mypasscv
+	cp mypasscv*.def mypasscv
+	cp mypasscv.tex mypasscv
+	cp mypasscv.pdf mypasscv
+	cp mypasscv_en.tex mypasscv/example
+	cp mypasscv_en.pdf mypasscv/example
+	cp README mypasscv
+	cp Makefile mypasscv/Makefile.mypasscv
+	tar -cvf mypasscv.tar mypasscv
+	gzip -f mypasscv.tar
+	rm -fr mypasscv
 
 distclean:
 	rm -f *~ *.synctex.gz *.aux *.log *.out *.backup *.toc *.temp

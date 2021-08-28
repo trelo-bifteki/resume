@@ -8,7 +8,7 @@
 % See  http://www.latex-project.org/lppl.txt
 % for the details of that license
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{europasscv}[2015/03/10 (beta) Europass curriculum vitae class, 2013 version]
+\ProvidesClass{mypasscv}[2015/03/10 (beta) Europass curriculum vitae class, 2013 version]
 
 \usepackage{tikz}
 
@@ -31,94 +31,94 @@
 % Set language
 \DeclareOption{english}{%
   \AtEndOfPackage{%
-    \InputIfFileExists{europasscv_en.def}{}{%
-    \ClassError{europasscv}{English definition file 'europasscv_en.def' not found}%
-     {The file should be inside the europasscv folder.\MessageBreak
-    Try to re-install the europasscv class.}}%
+    \InputIfFileExists{mypasscv_en.def}{}{%
+    \ClassError{mypasscv}{English definition file 'mypasscv_en.def' not found}%
+     {The file should be inside the mypasscv folder.\MessageBreak
+    Try to re-install the mypasscv class.}}%
   }%
 }
 \DeclareOption{italian}{%
   \AtEndOfPackage{%
-    \InputIfFileExists{europasscv_it.def}{}{%
-    \ClassWarningNoLine{europasscv}{Italian definition file 'europasscv_it.def' not found}}%
+    \InputIfFileExists{mypasscv_it.def}{}{%
+    \ClassWarningNoLine{mypasscv}{Italian definition file 'mypasscv_it.def' not found}}%
   }%
 }
 \DeclareOption{spanish}{%
   \AtEndOfPackage{%
-    \InputIfFileExists{europasscv_es.def}{}{%
-    \ClassWarningNoLine{europasscv}{Spanish definition file 'europasscv_es.def' not found}}%
+    \InputIfFileExists{mypasscv_es.def}{}{%
+    \ClassWarningNoLine{mypasscv}{Spanish definition file 'mypasscv_es.def' not found}}%
   }%
 }
 \DeclareOption{french}{%
   \AtEndOfPackage{%
-    \InputIfFileExists{europasscv_fr.def}{}{%
-    \ClassWarningNoLine{europasscv}{French definition file 'europasscv_fr.def' not found}}%
+    \InputIfFileExists{mypasscv_fr.def}{}{%
+    \ClassWarningNoLine{mypasscv}{French definition file 'mypasscv_fr.def' not found}}%
   }%
 }
 \DeclareOption{danish}{%
   \AtEndOfPackage{%
-    \InputIfFileExists{europasscv_da.def}{}{%
-    \ClassWarningNoLine{europasscv}{Danish definition file 'europasscv_da.def' not found}}%
+    \InputIfFileExists{mypasscv_da.def}{}{%
+    \ClassWarningNoLine{mypasscv}{Danish definition file 'mypasscv_da.def' not found}}%
   }%
 }
 \DeclareOption{german}{%
   \AtEndOfPackage{%
-    \InputIfFileExists{europasscv_de.def}{}{%
-    \ClassWarningNoLine{europasscv}{German definition file 'europasscv_de.def' not found}}%
+    \InputIfFileExists{mypasscv_de.def}{}{%
+    \ClassWarningNoLine{mypasscv}{German definition file 'mypasscv_de.def' not found}}%
   }%
 }
 \DeclareOption{finnish}{%
   \AtEndOfPackage{%
-    \InputIfFileExists{europasscv_fi.def}{}{%
-    \ClassWarningNoLine{europasscv}{Finnish definition file 'europasscv_fi.def' not found}}%
+    \InputIfFileExists{mypasscv_fi.def}{}{%
+    \ClassWarningNoLine{mypasscv}{Finnish definition file 'mypasscv_fi.def' not found}}%
   }%
 }
 \DeclareOption{portuges}{%
   \AtEndOfPackage{%
-    \InputIfFileExists{europasscv_pt.def}{}{%
-    \ClassWarningNoLine{europasscv}{Portuguese definition file 'europasscv_pt.def' not found}}%
+    \InputIfFileExists{mypasscv_pt.def}{}{%
+    \ClassWarningNoLine{mypasscv}{Portuguese definition file 'mypasscv_pt.def' not found}}%
   }%
 }
 \DeclareOption{portuguese}{%
   \AtEndOfPackage{%
-    \InputIfFileExists{europasscv_pt.def}{}{%
-    \ClassWarningNoLine{europasscv}{Portuguese definition file 'europasscv_pt.def' not found}}%
+    \InputIfFileExists{mypasscv_pt.def}{}{%
+    \ClassWarningNoLine{mypasscv}{Portuguese definition file 'mypasscv_pt.def' not found}}%
   }%
 }
 \DeclareOption{swedish}{%
   \AtEndOfPackage{%
-    \InputIfFileExists{europasscv_sv.def}{}{%
-    \ClassWarningNoLine{europasscv}{Swedish definition file 'europasscv_sv.def' not found}}%
+    \InputIfFileExists{mypasscv_sv.def}{}{%
+    \ClassWarningNoLine{mypasscv}{Swedish definition file 'mypasscv_sv.def' not found}}%
   }%
 }
 \DeclareOption{norwegian}{%
   \AtEndOfPackage{%
-    \InputIfFileExists{europasscv_no.def}{}{%
-    \ClassWarningNoLine{europasscv}{Norwegian definition file 'europasscv_no.def' not found}}%
+    \InputIfFileExists{mypasscv_no.def}{}{%
+    \ClassWarningNoLine{mypasscv}{Norwegian definition file 'mypasscv_no.def' not found}}%
   }%
 }
 \DeclareOption{dutch}{%
   \AtEndOfPackage{%
-    \InputIfFileExists{europasscv_nl.def}{}{%
-    \ClassWarningNoLine{europasscv}{Dutch definition file 'europasscv_nl.def' not found}}%
+    \InputIfFileExists{mypasscv_nl.def}{}{%
+    \ClassWarningNoLine{mypasscv}{Dutch definition file 'mypasscv_nl.def' not found}}%
   }%
 }
 \DeclareOption{catalan}{%
   \AtEndOfPackage{%
-    \InputIfFileExists{europasscv_ca.def}{}{%
-    \ClassWarningNoLine{europasscv}{Catalan definition file 'europasscv_ca.def' not found}}%
+    \InputIfFileExists{mypasscv_ca.def}{}{%
+    \ClassWarningNoLine{mypasscv}{Catalan definition file 'mypasscv_ca.def' not found}}%
   }%
 }
 \DeclareOption{polish}{%
   \AtEndOfPackage{%
-    \InputIfFileExists{europasscv_pl.def}{}{%
-    \ClassWarningNoLine{europasscv}{Polish definition file 'europasscv_pl.def' not found}}%
+    \InputIfFileExists{mypasscv_pl.def}{}{%
+    \ClassWarningNoLine{mypasscv}{Polish definition file 'mypasscv_pl.def' not found}}%
   }%
 }
 \DeclareOption{hungarian}{%
   \AtEndOfPackage{%
-    \InputIfFileExists{europasscv_hu.def}{}{%
-    \ClassWarningNoLine{europasscv}{Hungarian definition file 'europasscv_hu.def' not found}}%
+    \InputIfFileExists{mypasscv_hu.def}{}{%
+    \ClassWarningNoLine{mypasscv}{Hungarian definition file 'mypasscv_hu.def' not found}}%
     \ecvpage{\thepage\ifx\@empty\ecv@totpages.\else\ecv@totpages\fi~\ecv@pagekey}
     \def\ecv@lfoot{%
   \footnotesize\textrm{\ecv@page~- \textrm{\ecv@footername} \ecv@cvofkey}}%
@@ -126,80 +126,80 @@
 }
 \DeclareOption{estonian}{%
   \AtEndOfPackage{%
-    \InputIfFileExists{europasscv_et.def}{}{%
-    \ClassWarningNoLine{europasscv}{Estonian definition file 'europasscv_et.def' not found}}%
+    \InputIfFileExists{mypasscv_et.def}{}{%
+    \ClassWarningNoLine{mypasscv}{Estonian definition file 'mypasscv_et.def' not found}}%
   }%
 }
 \DeclareOption{icelandic}{%
   \AtEndOfPackage{%
-    \InputIfFileExists{europasscv_is.def}{}{%
-    \ClassWarningNoLine{europasscv}{Icelandic definition file 'europasscv_is.def' not found}}%
+    \InputIfFileExists{mypasscv_is.def}{}{%
+    \ClassWarningNoLine{mypasscv}{Icelandic definition file 'mypasscv_is.def' not found}}%
   }%
 }
 \DeclareOption{lithuanian}{%
   \AtEndOfPackage{%
-    \InputIfFileExists{europasscv_lt.def}{}{%
-    \ClassWarningNoLine{europasscv}{Lithuanian definition file 'europasscv_lt.def' not found}}%
+    \InputIfFileExists{mypasscv_lt.def}{}{%
+    \ClassWarningNoLine{mypasscv}{Lithuanian definition file 'mypasscv_lt.def' not found}}%
   }%
 }
 \DeclareOption{czech}{%
   \AtEndOfPackage{%
-    \InputIfFileExists{europasscv_cs.def}{}{%
-    \ClassWarningNoLine{europasscv}{Czech definition file 'europasscv_cs.def' not found}}%
+    \InputIfFileExists{mypasscv_cs.def}{}{%
+    \ClassWarningNoLine{mypasscv}{Czech definition file 'mypasscv_cs.def' not found}}%
   }%
 }
 \DeclareOption{slovak}{%
   \AtEndOfPackage{%
-    \InputIfFileExists{europasscv_sk.def}{}{%
-    \ClassWarningNoLine{europasscv}{Slovak definition file 'europasscv_sk.def' not found}}%
+    \InputIfFileExists{mypasscv_sk.def}{}{%
+    \ClassWarningNoLine{mypasscv}{Slovak definition file 'mypasscv_sk.def' not found}}%
   }%
 }
 \DeclareOption{latvian}{%
   \AtEndOfPackage{%
-    \InputIfFileExists{europasscv_lv.def}{}{%
-    \ClassWarningNoLine{europasscv}{Latvian definition file 'europasscv_lv.def' not found}}%
+    \InputIfFileExists{mypasscv_lv.def}{}{%
+    \ClassWarningNoLine{mypasscv}{Latvian definition file 'mypasscv_lv.def' not found}}%
   }%
 }
 \DeclareOption{slovenian}{%
   \AtEndOfPackage{%
-    \InputIfFileExists{europasscv_sl.def}{}{%
-    \ClassWarningNoLine{europasscv}{Slovenian definition file 'europasscv_sl.def' not found}}%
+    \InputIfFileExists{mypasscv_sl.def}{}{%
+    \ClassWarningNoLine{mypasscv}{Slovenian definition file 'mypasscv_sl.def' not found}}%
   }%
 }
 \DeclareOption{romanian}{%
   \AtEndOfPackage{%
-    \InputIfFileExists{europasscv_ro.def}{}{%
-    \ClassWarningNoLine{europasscv}{Romanian definition file 'europasscv_ro.def' not found}}%
+    \InputIfFileExists{mypasscv_ro.def}{}{%
+    \ClassWarningNoLine{mypasscv}{Romanian definition file 'mypasscv_ro.def' not found}}%
   }%
 }
 \DeclareOption{maltese}{%
   \AtEndOfPackage{%
-    \InputIfFileExists{europasscv_mt.def}{}{%
-    \ClassWarningNoLine{europasscv}{Maltese definition file 'europasscv_mt.def' not found}}%
+    \InputIfFileExists{mypasscv_mt.def}{}{%
+    \ClassWarningNoLine{mypasscv}{Maltese definition file 'mypasscv_mt.def' not found}}%
   }%
 }
 \DeclareOption{bulgarian}{%
   \AtEndOfPackage{%
-      \InputIfFileExists{europasscv_bg.def}{}{%
-      \ClassWarningNoLine{europasscv}{Bulgarian definition file 'europasscv_bg.def' not found}}%
+      \InputIfFileExists{mypasscv_bg.def}{}{%
+      \ClassWarningNoLine{mypasscv}{Bulgarian definition file 'mypasscv_bg.def' not found}}%
   }%
 }
 \DeclareOption{greek}{%
   \AtEndOfPackage{%
-     \InputIfFileExists{europasscv_gr.def}{}{%
-    \ClassWarningNoLine{europasscv}{Greek definition file 'europasscv_gr.def' not found}}%
+     \InputIfFileExists{mypasscv_gr.def}{}{%
+    \ClassWarningNoLine{mypasscv}{Greek definition file 'mypasscv_gr.def' not found}}%
   }%
 }
 \DeclareOption{galician}{%
   \AtEndOfPackage{%
-     \InputIfFileExists{europasscv_gl.def}{}{%
-    \ClassWarningNoLine{europasscv}{Galician definition file 'europasscv_gl.def' not found}}%
+     \InputIfFileExists{mypasscv_gl.def}{}{%
+    \ClassWarningNoLine{mypasscv}{Galician definition file 'mypasscv_gl.def' not found}}%
   }%
 }
 \DeclareOption{serbian}{%
   \AtEndOfPackage{%
-     \InputIfFileExists{europasscv_sr.def}{}{%
-    \ClassWarningNoLine{europasscv}{Serbian definition file 'europasscv_sr.def' not found}}%
+     \InputIfFileExists{mypasscv_sr.def}{}{%
+    \ClassWarningNoLine{mypasscv}{Serbian definition file 'mypasscv_sr.def' not found}}%
   }%
 }
 
@@ -625,7 +625,7 @@
 % Text bullet
 \newcommand{\ecvbullet}{\raisebox{.35ex}[0cm][0cm]{\tiny\textbullet}}
 
-\newenvironment{europasscv}{%
+\newenvironment{mypasscv}{%
   \ecvLeftColumnWidth{\ecv@leftcolwidth}
   \ecvColSep{\ecv@colsep}
   \renewcommand{\tabcolsep}{0pt}
@@ -689,10 +689,10 @@
     \renewcommand{\ecv@secondarg}{#2}
     \renewcommand{\ecv@thirdarg}{#3}
     \message{^^J==================^^J}
-    \message{[europasscv] typesetting ^^J}
-    \message{[europasscv] \meaning\ecv@secondarg^^J}
-    \message{[europasscv] \meaning\ecv@thirdarg^^J}
-    \message{[europasscv] ecvitemskip = \if@ecvitemskip true, skipping \the\ecv@currentskip \else false\fi}
+    \message{[mypasscv] typesetting ^^J}
+    \message{[mypasscv] \meaning\ecv@secondarg^^J}
+    \message{[mypasscv] \meaning\ecv@thirdarg^^J}
+    \message{[mypasscv] ecvitemskip = \if@ecvitemskip true, skipping \the\ecv@currentskip \else false\fi}
   \fi
 
   \if@ecvitemskip
