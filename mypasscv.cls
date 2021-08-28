@@ -918,6 +918,11 @@
   \setlength{\ecv@currentskip}{0.8\bigskipamount}
 }
 
+\newcommand{\ecvsubtitle}[1]{
+	\ecvitem{}{\textbf{#1}}
+}
+
+
 \newcommand{\ecvhighlightcell}[1]{\vspace{-4\dp\strutbox}\hspace{0.2cm}\parbox{0.95\ecv@rightcolwidth}{\vspace*{0.3cm} #1\vspace{0.1cm}} \cellcolor{ecvhighlightcellcolor}}
 
 \ecvRuleWidth{0pt}
