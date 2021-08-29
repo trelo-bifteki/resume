@@ -919,7 +919,9 @@
 }
 
 \newcommand{\ecvsubtitle}[1]{
-	\ecvitem{}{\textbf{#1}}
+  \begin{doublespacing}
+	  \ecvitem{}{\textbf{#1}}
+  \end{doublespacing}
 }
 
 
