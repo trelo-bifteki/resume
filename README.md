@@ -10,6 +10,9 @@ it clean without additional logos / text
 - Different versions for German / English
 - Clean (no logos, EU footers)
 
+## Dependencies
+
+	apt install texlive-lang-german
 
 ## Quick start
 
